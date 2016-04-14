@@ -1,0 +1,3152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A1B937D-7300-431C-8FAA-7C1E079535EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SysProg3.My.MyApplication</StartupObject>
+    <RootNamespace>SysProg3</RootNamespace>
+    <AssemblyName>SysProg3</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SysProg3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SysProg3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\accept.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\anchor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_cascade.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_double.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_form.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_form_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_form_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_form_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_form_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_get.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_osx.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_osx_terminal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_put.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_side_boxes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_side_contract.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_side_expand.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_side_list.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_side_tree.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_split.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_tile_horizontal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_tile_vertical.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_view_columns.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_view_detail.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_view_gallery.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_view_icons.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_view_list.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_view_tile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_xp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\application_xp_terminal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_branch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_divide.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_in.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_inout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_join.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_left.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_merge.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_out.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_refresh_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_rotate_anticlockwise.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_rotate_clockwise.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_switch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_turn_left.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_turn_right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_undo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\arrow_up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\asterisk_orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\asterisk_yellow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\attach.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_bronze_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_bronze_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_bronze_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_gold_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_gold_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_gold_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_silver_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_silver_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\award_star_silver_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket_put.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\basket_remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bell.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bell_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bell_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bell_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bell_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bell_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bin_closed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bin_empty.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bomb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_addresses.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\book_previous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\box.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\brick.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\brick_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\brick_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\brick_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\brick_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\brick_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\brick_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bricks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\briefcase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bug.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bug_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bug_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bug_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bug_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bug_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bug_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\building_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_arrow_bottom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_arrow_down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_arrow_top.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_arrow_up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_black.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_feed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_green.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_picture.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_pink.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_purple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_star.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_toggle_minus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_toggle_plus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_white.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\bullet_yellow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cake.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calculator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calculator_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calculator_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calculator_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calculator_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calculator_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar_view_day.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar_view_month.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\calendar_view_week.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\camera_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\car.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\car_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\car_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart_put.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cart_remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cd_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cd_burn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cd_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cd_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cd_eject.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cd_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_bar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_bar_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_bar_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_bar_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_bar_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_bar_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_curve.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_curve_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_curve_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_curve_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_curve_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_curve_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_curve_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_line.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_line_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_line_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_line_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_line_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_line_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_organisation.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_organisation_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_organisation_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_pie.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_pie_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_pie_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_pie_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_pie_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\chart_pie_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_pause.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\clock_stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cog.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cog_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cog_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cog_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cog_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cog_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\coins.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\coins_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\coins_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\color_swatch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\color_wheel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\comment.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\comment_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\comment_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\comment_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\comments.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\comments_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\comments_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\compress.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\computer_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\connect.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\contrast.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\contrast_decrease.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\contrast_high.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\contrast_increase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\contrast_low.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_eject.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_eject_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_end.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_end_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_equalizer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_equalizer_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_fastforward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_fastforward_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_pause.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_pause_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_play_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_repeat.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_repeat_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_rewind.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_rewind_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_start.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_start_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\control_stop_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\controller.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\controller_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\controller_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\controller_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\creditcards.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cross.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\css.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\css_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\css_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\css_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\css_valid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cup_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cursor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cut.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\cut_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_connect.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\database_table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\date_previous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\disconnect.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\disk_multiple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\door.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\door_in.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\door_open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\door_out.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drink.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drink_empty.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_burn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_cd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_cd_empty.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_network.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_rename.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\drive_web.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\dvd_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_attach.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\email_open_image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_evilgrin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_grin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_happy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_smile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_surprised.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_tongue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_unhappy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_waii.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\emoticon_wink.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\error_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\error_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\error_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\exclamation.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\eye.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\feed_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\female.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\film_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\flag_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\flag_green.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\flag_orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\flag_pink.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\flag_purple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\flag_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\flag_yellow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_bell.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_brick.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_bug.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_explore.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_feed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_heart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_lightbulb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_page.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_page_white.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_palette.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_picture.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_star.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\folder_wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\font.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\font_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\font_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\font_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\group_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\heart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\heart_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\heart_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\hourglass.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\hourglass_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\hourglass_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\hourglass_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\hourglass_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\house.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\house_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\house_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\html.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\html_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\html_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\html_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\html_valid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\image_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\image_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\image_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\image_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\images.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\information.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ipod.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ipod_cast.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ipod_cast_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ipod_cast_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ipod_sound.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\joystick.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\joystick_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\joystick_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\joystick_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\key_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\key_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\key_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\keyboard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\keyboard_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\keyboard_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\keyboard_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layers.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_content.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_header.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\layout_sidebar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightbulb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightbulb_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightbulb_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightbulb_off.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightning_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightning_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lightning_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\link_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\link_break.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\link_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\link_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\link_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\link_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lock_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lock_break.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lock_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lock_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lock_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lock_open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lorry.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lorry_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lorry_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lorry_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lorry_flatbed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lorry_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\lorry_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\magifier_zoom_out.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\magnifier.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\magnifier_zoom_in.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\male.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\map.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\map_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\map_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\map_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\map_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\map_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_bronze_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_bronze_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_bronze_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_bronze_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_bronze_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_gold_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_gold_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_gold_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_gold_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_gold_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_silver_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_silver_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_silver_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_silver_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\medal_silver_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\money_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\money_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\money_dollar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\money_euro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\money_pound.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\money_yen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\monitor_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\mouse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\mouse_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\mouse_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\mouse_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\music.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\newspaper.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\newspaper_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\newspaper_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\newspaper_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\newspaper_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\note.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\note_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\note_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\note_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\note_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\note_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\overlays.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\package.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\package_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\package_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\package_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\package_green.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\package_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_attach.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_code.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_excel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_green.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_paintbrush.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_acrobat.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_actionscript.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_c.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_cd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_code.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_code_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_coldfusion.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_compressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_copy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_cplusplus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_csharp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_cup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_dvd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_excel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_flash.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_freehand.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_get.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_h.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_horizontal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_medal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_office.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_paint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_paintbrush.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_paste.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_php.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_picture.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_powerpoint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_put.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_ruby.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_stack.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_star.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_swoosh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_text_width.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_tux.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_vector.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_visualstudio.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_width.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_word.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_world.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_white_zip.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_word.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\page_world.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\paintbrush.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\paintcan.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\palette.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\paste_plain.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\paste_word.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pencil.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pencil_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pencil_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pencil_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\phone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\phone_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\phone_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\phone_sound.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\photo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\photo_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\photo_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\photo_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\photos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_empty.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\picture_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pictures.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pilcrow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pill.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pill_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pill_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\pill_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin_disabled.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\plugin_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\printer_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\printer_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\printer_empty.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\printer_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\rainbow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_disk.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_magnify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_picture.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\report_word.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\resultset_first.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\resultset_last.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\resultset_next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\resultset_previous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\rosette.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\rss.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\rss_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\rss_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\rss_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\rss_valid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_get.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\ruby_put.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_code.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_code_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_palette.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\script_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_chart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_compressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_connect.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\server_uncompressed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shading.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_align_bottom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_align_center.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_align_left.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_align_middle.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_align_right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_align_top.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_flip_horizontal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_flip_vertical.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_handles.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_move_back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_move_backwards.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_move_forwards.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_move_front.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_rotate_anticlockwise.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_rotate_clockwise.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_square_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shape_ungroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shield.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shield_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shield_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\shield_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sitemap.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sitemap_color.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sound.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sound_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sound_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sound_low.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sound_mute.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sound_none.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\spellcheck.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_8ball.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_basketball.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_football.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_golf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_raquet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_shuttlecock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_soccer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sport_tennis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\star.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\status_away.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\status_busy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\status_offline.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\status_online.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\style.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\style_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\style_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\style_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\style_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\sum.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tab.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tab_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tab_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tab_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tab_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_gear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_multiple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_relationship.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_row_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_row_insert.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\table_sort.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_blue_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_blue_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_blue_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_green.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_pink.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_purple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tag_yellow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - Acces 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - Excel 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - Infopatch 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - Office 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - Outlook 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - PowerPoint 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - Publisher 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\Talwayseb - Word 2007.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\telephone_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\television.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\television_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\television_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_align_center.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_align_justify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_align_left.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_align_right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_allcaps.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_bold.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_columns.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_dropcaps.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_heading_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_heading_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_heading_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_heading_4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_heading_5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_heading_6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_horizontalrule.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_indent.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_indent_remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_italic.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_kerning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_letter_omega.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_letterspacing.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_linespacing.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_list_bullets.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_list_numbers.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_lowercase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_padding_bottom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_padding_left.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_padding_right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_padding_top.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_replace.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_signature.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_smallcaps.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_strikethrough.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_subscript.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_superscript.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_underline.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\text_uppercase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\textfield.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\textfield_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\textfield_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\textfield_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\textfield_rename.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\thumb_down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\thumb_up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tick.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\time.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\time_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\time_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\time_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\timeline_marker.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\transmit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\transmit_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\transmit_blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\transmit_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\transmit_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\transmit_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\transmit_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\tux.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_comment.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_female.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_gray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_green.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\user_suit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\vcard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\vcard_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\vcard_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\vcard_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\vector.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\vector_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\vector_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\wand.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\weather_clouds.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\weather_cloudy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\weather_lightning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\weather_rain.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\weather_snow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\weather_sun.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\webcam.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\webcam_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\webcam_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\webcam_error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\world.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\world_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\world_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\world_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\world_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\world_link.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\wrench.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\wrench_orange.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\xhtml.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\xhtml_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\xhtml_delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\xhtml_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\xhtml_valid.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\zoom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\zoom_in.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos 16x16\zoom_out.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
